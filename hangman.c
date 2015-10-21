@@ -23,6 +23,10 @@ void clear() {
     //    printf("\n");
 }
 
+void draw() {
+    printf("\nDesenho aqui.\n\n");
+}
+
 int main() {
     char secret[100];
     char word[100];
@@ -36,6 +40,7 @@ int main() {
     create(secret, word);
 
     printf("[%s]\n", word);
+    draw();
 
     // TODO: completar o jogo
 
