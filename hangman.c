@@ -16,7 +16,7 @@ void create( char s[], char w[] ) {
     w[ len ] = '\0';
 }
 
-void clear() {    
+void clear() {
     // FIXME: deve ficar no início da tela
     //int i;
     //for ( i = 0 ; i < 20 ; i++ )
@@ -29,46 +29,46 @@ void draw(int erros) {
     printf(" |     |   \n");
 
     switch(erros) {
-        case 0:
-    printf(" |        \n");
-    printf(" |     \n");
-    printf(" |      \n");
+    case 0:
+        printf(" |        \n");
+        printf(" |     \n");
+        printf(" |      \n");
         break;
 
-        case 1:
-    printf(" |     o   \n");
-    printf(" |     \n");
-    printf(" |     \n");
+    case 1:
+        printf(" |     o   \n");
+        printf(" |     \n");
+        printf(" |     \n");
         break;
 
-        case 2:
-    printf(" |     o   \n");
-    printf(" |     O \n");
-    printf(" |      \n");
+    case 2:
+        printf(" |     o   \n");
+        printf(" |     O \n");
+        printf(" |      \n");
         break;
 
-        case 3:
-    printf(" |     o   \n");
-    printf(" |    /O \n");
-    printf(" |     \n");
+    case 3:
+        printf(" |     o   \n");
+        printf(" |    /O \n");
+        printf(" |     \n");
         break;
 
-        case 4:
-    printf(" |     o   \n");
-    printf(" |    /O\\ \n");
-    printf(" |      \n");
+    case 4:
+        printf(" |     o   \n");
+        printf(" |    /O\\ \n");
+        printf(" |      \n");
         break;
 
-        case 5:
-    printf(" |     o   \n");
-    printf(" |    /O\\ \n");
-    printf(" |    /  \n");
+    case 5:
+        printf(" |     o   \n");
+        printf(" |    /O\\ \n");
+        printf(" |    /  \n");
         break;
 
-        case 6:
-    printf(" |     o   \n");
-    printf(" |    /O\\ \n");
-    printf(" |    / \\ \n");
+    case 6:
+        printf(" |     o   \n");
+        printf(" |    /O\\ \n");
+        printf(" |    / \\ \n");
         break;
     }
     printf(" |         \n");
@@ -82,13 +82,13 @@ int main() {
     char word[100];
     int erros = 0;
     char letra;
-   
+
     printf("*Jogo da Forca, (c) 2015*\n");
 
     printf("Informe a palavra secreta: ");
     scanf("%s", secret);
 
-    clear();    
+    clear();
     create(secret, word);
 
     while (erros < 6 ) {
@@ -100,7 +100,7 @@ int main() {
         scanf("%c", &letra);
         printf("A letra informada foi: [%c]\n", letra);
         erros++;
-    }    
+    }
     draw(erros);
 
     printf("*FIM*\n");
