@@ -91,16 +91,17 @@ int main() {
     clear();    
     create(secret, word);
 
-    printf("[%s]\n", word);
+    while (erros < 6 ) {
+        printf("[%s]\n", word);
+        draw(erros);
+
+        printf("Informe uma letra:");
+        scanf("%c", &letra); // PEGA ENTER!
+        scanf("%c", &letra);
+        printf("A letra informada foi: [%c]\n", letra);
+        erros++;
+    }    
     draw(erros);
-
-    printf("Informe uma letra:");
-    scanf("%c", &letra); // PEGA ENTER!
-    scanf("%c", &letra);
-    printf("A letra informada foi: [%c]\n", letra);
-
-    
-    // TODO: completar o jogo
 
     printf("*FIM*\n");
 
