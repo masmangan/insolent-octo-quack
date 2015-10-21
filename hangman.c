@@ -25,78 +25,55 @@ void clear() {
 
 void draw(int erros) {
     printf("\n");
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
 
     switch(erros) {
         case 0:
-    printf(" +-----+   \n");
-    printf(" |     |   \n");
     printf(" |        \n");
     printf(" |     \n");
     printf(" |      \n");
-    printf(" |         \n");
-    printf("/ \\      \n");
         break;
 
         case 1:
-    printf(" +-----+   \n");
-    printf(" |     |   \n");
     printf(" |     o   \n");
     printf(" |     \n");
     printf(" |     \n");
-    printf(" |         \n");
-    printf("/ \\      \n");
         break;
 
         case 2:
-    printf(" +-----+   \n");
-    printf(" |     |   \n");
     printf(" |     o   \n");
     printf(" |     O \n");
     printf(" |      \n");
-    printf(" |         \n");
-    printf("/ \\      \n");
         break;
 
         case 3:
-    printf(" +-----+   \n");
-    printf(" |     |   \n");
     printf(" |     o   \n");
     printf(" |    /O \n");
     printf(" |     \n");
-    printf(" |         \n");
-    printf("/ \\      \n");
         break;
 
         case 4:
-    printf(" +-----+   \n");
-    printf(" |     |   \n");
     printf(" |     o   \n");
     printf(" |    /O\\ \n");
     printf(" |      \n");
-    printf(" |         \n");
-    printf("/ \\      \n");
         break;
 
         case 5:
-    printf(" +-----+   \n");
-    printf(" |     |   \n");
     printf(" |     o   \n");
     printf(" |    /O\\ \n");
     printf(" |    /  \n");
-    printf(" |         \n");
-    printf("/ \\      \n");
         break;
 
         case 6:
-    printf(" +-----+   \n");
-    printf(" |     |   \n");
     printf(" |     o   \n");
     printf(" |    /O\\ \n");
     printf(" |    / \\ \n");
-    printf(" |         \n");
-    printf("/ \\      \n");
         break;
     }
+    printf(" |         \n");
+    printf("/ \\      \n");
+
     printf("\n\n");
 }
 
