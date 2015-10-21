@@ -27,7 +27,7 @@ int main() {
     char secret[100];
     char word[100];
    
-    printf("Jogo da Forca, (c) 2015\n");
+    printf("*Jogo da Forca, (c) 2015*\n");
 
     printf("Informe a palavra secreta: ");
     scanf("%s", secret);
