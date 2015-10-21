@@ -24,7 +24,17 @@ void clear() {
 }
 
 void draw() {
-    printf("\nDesenho aqui.\n\n");
+    printf("\n");
+
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
+    printf(" |     o   \n");
+    printf(" |    /O\\ \n");
+    printf(" |    / \\ \n");
+    printf(" |         \n");
+    printf("/ \\      \n");
+
+    printf("\n\n");
 }
 
 int main() {
