@@ -23,9 +23,71 @@ void clear() {
     //    printf("\n");
 }
 
-void draw() {
+void draw(int erros) {
     printf("\n");
 
+    switch(erros) {
+        case 0:
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
+    printf(" |        \n");
+    printf(" |     \n");
+    printf(" |      \n");
+    printf(" |         \n");
+    printf("/ \\      \n");
+        break;
+
+        case 1:
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
+    printf(" |     o   \n");
+    printf(" |     \n");
+    printf(" |     \n");
+    printf(" |         \n");
+    printf("/ \\      \n");
+        break;
+
+        case 2:
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
+    printf(" |     o   \n");
+    printf(" |     O \n");
+    printf(" |      \n");
+    printf(" |         \n");
+    printf("/ \\      \n");
+        break;
+
+        case 3:
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
+    printf(" |     o   \n");
+    printf(" |    /O \n");
+    printf(" |     \n");
+    printf(" |         \n");
+    printf("/ \\      \n");
+        break;
+
+        case 4:
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
+    printf(" |     o   \n");
+    printf(" |    /O\\ \n");
+    printf(" |      \n");
+    printf(" |         \n");
+    printf("/ \\      \n");
+        break;
+
+        case 5:
+    printf(" +-----+   \n");
+    printf(" |     |   \n");
+    printf(" |     o   \n");
+    printf(" |    /O\\ \n");
+    printf(" |    /  \n");
+    printf(" |         \n");
+    printf("/ \\      \n");
+        break;
+
+        case 6:
     printf(" +-----+   \n");
     printf(" |     |   \n");
     printf(" |     o   \n");
@@ -33,7 +95,8 @@ void draw() {
     printf(" |    / \\ \n");
     printf(" |         \n");
     printf("/ \\      \n");
-
+        break;
+    }
     printf("\n\n");
 }
 
@@ -50,7 +113,7 @@ int main() {
     create(secret, word);
 
     printf("[%s]\n", word);
-    draw();
+    draw(3);
 
     // TODO: completar o jogo
 
