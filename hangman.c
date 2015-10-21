@@ -80,6 +80,8 @@ void draw(int erros) {
 int main() {
     char secret[100];
     char word[100];
+    int erros = 0;
+    char letra;
    
     printf("*Jogo da Forca, (c) 2015*\n");
 
@@ -90,8 +92,14 @@ int main() {
     create(secret, word);
 
     printf("[%s]\n", word);
-    draw(3);
+    draw(erros);
 
+    printf("Informe uma letra:");
+    scanf("%c", &letra); // PEGA ENTER!
+    scanf("%c", &letra);
+    printf("A letra informada foi: [%c]\n", letra);
+
+    
     // TODO: completar o jogo
 
     printf("*FIM*\n");
